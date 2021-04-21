@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cfb686;
+    margin-bottom: 40px;
+}
+h1{
+    margin: 10px 0 0;
+}
+.can{
+    background-color: #fff;
+    border: 4px solid #6d5f45;
+    color: #6d5f45;
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.can.can-small{
+    height: 95px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+    border: 0;
+    background: url(../images/img-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.can.can-small.full{
+    background: url(../images/img-full.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cans{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+}
+.remained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.5s ease;
+}
+.remained span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.remained small{
+    font-size: 12px;
+}
+.percent{
+    background-color: #c0a574;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 0;
+    transition: 0.5s ease;
+}
+.text{
+    text-align: center;
+    margin: 0 0 5px;
+}
+#homer{
+    position: absolute;
+    left: calc(30% - 100px);
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+#homer img{
+    width: 300px;
+}
